@@ -21,20 +21,57 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 30px; /* Espaciado aumentado */
+            margin-bottom: 30px;
         }
         .series-info img {
-            max-width: 300px; /* Tamaño más grande */
+            max-width: 300px;
             height: auto;
             margin-top: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .table-container {
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
 <body>
     <h1>Información del Estudiante</h1>
     <p><strong>Nombre:</strong> Breyneer Nieto Cardeño</p>
-    <p><strong>Semestre:</strong> 4° Cuarto</p>
-    <p><strong>Hobbies:</strong> Jugar fútbol, ver películas, jugar video juegos</p>
+    <p><strong>Semestre:</strong> 4°</p>
+    <p><strong>Hobbies:</strong></p>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Hobbies</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jugar fútbol</td>
+                </tr>
+                <tr>
+                    <td>Ver películas</td>
+                </tr>
+                <tr>
+                    <td>Jugar videojuegos</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <p><strong>Series favoritas:</strong></p>
     <ul>
         <li class="series-info">
