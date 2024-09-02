@@ -23,9 +23,13 @@
             justify-content: center;
             margin-bottom: 10px;
         }
-        img {
-            display: block;
-            margin-right: 10px;
+        .series-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .series-info img {
+            margin-top: 5px;
             max-width: 100px;
             height: auto;
         }
@@ -38,9 +42,18 @@
     <p><strong>Hobbies:</strong> Jugar fútbol, ver películas, jugar video juegos</p>
     <p><strong>Series favoritas:</strong></p>
     <ul>
-        <li><img src="Fallout.jpeg" alt="Serie 1">Fallout</li>
-        <li><img src="Loki.jpeg" alt="Serie 2">Loki</li>
-        <li><img src="Peaky_Blinder.jpeg" alt="Serie 3">Peaky Blinder</li>
+        <li class="series-info">
+            Fallout
+            <img src="Fallout.jpeg" alt="Serie 1">
+        </li>
+        <li class="series-info">
+            Loki
+            <img src="Loki.jpeg" alt="Serie 2">
+        </li>
+        <li class="series-info">
+            Peaky Blinder
+            <img src="Peaky_Blinder.jpeg" alt="Serie 3">
+        </li>
     </ul>
 </body>
 </html>
